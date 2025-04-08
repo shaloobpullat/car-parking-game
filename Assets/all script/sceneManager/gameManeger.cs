@@ -61,6 +61,10 @@ public class gameManeger : MonoBehaviour
         pouseBT.SetActive(true);
 
     }
+    public void exitt()
+    {
+        Application.Quit();
+    }
 
 
 }

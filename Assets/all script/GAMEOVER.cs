@@ -15,15 +15,17 @@ public class GAMEOVER : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider)
+        if (gameObject.tag == "car")
         {
-            FindAnyObjectByType<AudioManger>().Playsound("hit");
+            if (collision.collider)
+            {
+                FindAnyObjectByType<AudioManger>().Playsound("hit");
 
-            UIGameOver.SetActive(true);
-            Invoke("stop", 1f);
+                UIGameOver.SetActive(true);
+                Invoke("stop", 1f);
 
+            }
         }
-
 
     }
     public void stop()

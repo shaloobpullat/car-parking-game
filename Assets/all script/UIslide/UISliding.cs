@@ -4,6 +4,7 @@ public class UISliding : MonoBehaviour
 {
     public RectTransform UIPanal;
     public RectTransform LevelBT;
+    public RectTransform exitBT;
     public GameObject Nextbt, Prevbt;
     public Animator camera;
 
@@ -11,6 +12,8 @@ public class UISliding : MonoBehaviour
     Vector2 offScreen;
     Vector2 levelBTonscreen;
     Vector2 levleBToffScreen;
+    Vector2 exitBTonScreen;
+    Vector2 exitBToffScreen;
 
 
     void Start()
@@ -24,7 +27,12 @@ public class UISliding : MonoBehaviour
         levleBToffScreen = new Vector2(levelBTonscreen.x, -Screen.height);
 
         LevelBT.anchoredPosition = levelBTonscreen;
-        
+
+        exitBTonScreen = exitBT.anchoredPosition;
+        exitBToffScreen = new Vector2(levelBTonscreen.x, -Screen.height);
+
+        LevelBT.anchoredPosition = levelBTonscreen;
+
     }
 
     // Update is called once per frame
@@ -32,6 +40,7 @@ public class UISliding : MonoBehaviour
     {
         LeanTween.move(UIPanal,onscreen,0.3f).setEase(LeanTweenType.easeOutQuad);
         LeanTween.move(LevelBT, levleBToffScreen, 0.8f).setEase(LeanTweenType.easeOutQuad);
+        LeanTween.move(exitBT, exitBToffScreen, 0.8f).setEase(LeanTweenType.easeOutQuad);
         Nextbt.SetActive(false);
         Prevbt.SetActive(false);
 
@@ -45,6 +54,7 @@ public class UISliding : MonoBehaviour
     {
         LeanTween.move(UIPanal, offScreen, 0.7f).setEase(LeanTweenType.easeOutQuad);
         LeanTween.move(LevelBT, levelBTonscreen, 0.3f).setEase(LeanTweenType.easeOutQuad);
+        LeanTween.move(exitBT, exitBTonScreen, 0.3f).setEase(LeanTweenType.easeOutQuad);
         Nextbt.SetActive(true);
         Prevbt.SetActive(true);
 
