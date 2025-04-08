@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3958059746869176051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6318535174741458960}
+  - component: {fileID: 8620312501810245621}
+  m_Layer: 0
+  m_Name: AudioManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6318535174741458960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3958059746869176051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.777248, y: -3.7219677, z: 219.71432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8620312501810245621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3958059746869176051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805b2035f8d09e04f9afe6edd0ddf584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: carIdle
+    clip: {fileID: 8300000, guid: b8a395677e324ab4c985d1236ea591d0, type: 3}
+    volume: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: Handbrake
+    clip: {fileID: 8300000, guid: 6095df7689effcd48902a7a01c5aeb58, type: 3}
+    volume: 0.3
+    loop: 0
+    source: {fileID: 0}
+  - name: coin
+    clip: {fileID: 8300000, guid: c7d8686f7a0f4734d8e26088ea221dc0, type: 3}
+    volume: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: hit
+    clip: {fileID: 8300000, guid: 5ecd1215052c8af47afc84c667561512, type: 3}
+    volume: 0.7
+    loop: 0
+    source: {fileID: 0}
+  - name: click
+    clip: {fileID: 8300000, guid: 670b64b96db9d964b8f12ec4f384dac9, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: ch
+    clip: {fileID: 8300000, guid: ef647e27cf0b0d34ab7c9cd9f68f0c2e, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: bgm
+    clip: {fileID: 8300000, guid: 8a3d7676c46c08841bbae3b548a8d213, type: 3}
+    volume: 0.3
+    loop: 1
+    source: {fileID: 0}
